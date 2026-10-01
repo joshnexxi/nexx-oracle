@@ -1,31 +1,25 @@
-# NEXXI STREAM HANDOFF
-# Time: 2026-10-01 ~13:55 CDT
-# Status when you left: NOT LIVE
+# CODEX BRIEF — Nexxi go-live
+Owner: Josh Nexxi. Goal: get one live react on air. Do not redesign the brand.
 
-## Rumble state
-- Studio open
-- Encoder connected: 1080p, ~6018 Kbps, 30 fps, 0% packet loss
-- Session timer 00:00:00
-- Start stream ready
-- Thumbnail NOT uploaded
-- Title set: Nexxi Reacts. Candace Owens is a Total fraud I knew it.
-- Category: Entertainment
+## What he is trying to do
+Multistream one react show from Restream Studio to exactly 3 places:
+1. TikTok (discovery)
+2. YouTube (VOD)
+3. Rumble (already had studio + title open)
 
-## MISMATCH
-Left screen was Talulah Riley / Elon clip, not Candace. Match title to source before Start stream.
+Not using OBS. Restream Studio is the encoder. Do not add Kick, Instagram, or Facebook.
 
-## Candace lane (current title)
-Hook: She calls everyone a fraud. Two defamation suits say the pattern is hers.
+## Constraints
+- Restream destination cap: 3. Those three only.
+- Rumble Studio tab must stay closed so it does not fight Restream for the stream key.
+- Title must match the source clip.
+  - Current drafted title: "Nexxi Reacts. Candace Owens is a Total fraud I knew it."
+  - Screen earlier showed a Talulah Riley / Elon Musk clip, not Candace. If the source is Talulah, retitle. Do not leave a mismatch.
+- Thumbnail still not uploaded on Rumble/YouTube.
+- Encoder target: 1080p, 30 fps, ~6000 Kbps.
 
-1. Sep 29 2026: Robert L. Hild Jr. sued Owens. Alleges she told millions he helped kill Charlie Kirk and tied him to foreign actors and a gothic/communist underground. He says he was in the crowd. Second Kirk-related defamation case; first was April from Kirk security.
-2. Sep 28-30 2026: Viral claim of 4 old dating profiles. NOT verified. Owens called it the most deranged. Do not state profiles are real.
-3. Macron defamation suit (July 2025) still unresolved late Sep 2026.
+## Done when
+Restream shows TikTok, YouTube, Rumble connected, title matches clip, thumbnail set, one Start sends all three.
 
-## Talulah lane (clip already on screen)
-Retitle: Nexxi Reacts. Elon's ex said he can't stop. That's the whole personality.
-- Met July 2008 Whisky Mist. Proposed ~10 days later, handshake, no ring.
-- Home life was work and the kids.
-- She said he cannot stop and savor. Isaacson: Musk called himself a video-game addict.
-
-## Go-live
-1. Match title to clip. 2. Upload thumbnail. 3. Save. 4. Start stream.
+## Do not
+Do not open OBS. Do not add a 4th destination. Do not rewrite the show concept.
